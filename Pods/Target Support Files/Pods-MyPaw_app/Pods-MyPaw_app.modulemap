@@ -1,0 +1,6 @@
+module Pods_MyPaw_app {
+  umbrella header "Pods-MyPaw_app-umbrella.h"
+
+  export *
+  module * { export * }
+}

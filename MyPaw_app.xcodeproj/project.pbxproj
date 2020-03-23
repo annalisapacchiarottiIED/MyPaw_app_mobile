@@ -13,9 +13,12 @@
 		7BAC01C22427C74B00E25328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC01C12427C74B00E25328 /* Assets.xcassets */; };
 		7BAC01C52427C74B00E25328 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC01C42427C74B00E25328 /* Preview Assets.xcassets */; };
 		7BAC01C82427C74B00E25328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC01C62427C74B00E25328 /* LaunchScreen.storyboard */; };
+		FFAC9BE11E50C8F11CD4113D /* libPods-MyPaw_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B998328F485E0CAFE8B6F0 /* libPods-MyPaw_app.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19B998328F485E0CAFE8B6F0 /* libPods-MyPaw_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyPaw_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E29483BF747DA976BFB343 /* Pods-MyPaw_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPaw_app.release.xcconfig"; path = "Target Support Files/Pods-MyPaw_app/Pods-MyPaw_app.release.xcconfig"; sourceTree = "<group>"; };
 		7BAC01B82427C74900E25328 /* MyPaw_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPaw_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BAC01BB2427C74900E25328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BAC01BD2427C74900E25328 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		7BAC01C42427C74B00E25328 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7BAC01C72427C74B00E25328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BAC01C92427C74B00E25328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF8FD92B567B93454C037B77 /* Pods-MyPaw_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPaw_app.debug.xcconfig"; path = "Target Support Files/Pods-MyPaw_app/Pods-MyPaw_app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAC9BE11E50C8F11CD4113D /* libPods-MyPaw_app.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F8BDD5D8650B86085CB87CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF8FD92B567B93454C037B77 /* Pods-MyPaw_app.debug.xcconfig */,
+				33E29483BF747DA976BFB343 /* Pods-MyPaw_app.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7BAC01AF2427C74900E25328 = {
 			isa = PBXGroup;
 			children = (
 				7BAC01BA2427C74900E25328 /* MyPaw_app */,
 				7BAC01B92427C74900E25328 /* Products */,
+				2F8BDD5D8650B86085CB87CC /* Pods */,
+				9117233E926C97BD34EA56C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +92,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9117233E926C97BD34EA56C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19B998328F485E0CAFE8B6F0 /* libPods-MyPaw_app.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,6 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BAC01CC2427C74B00E25328 /* Build configuration list for PBXNativeTarget "MyPaw_app" */;
 			buildPhases = (
+				130E7E7258F1F9040D87CC53 /* [CP] Check Pods Manifest.lock */,
 				7BAC01B42427C74900E25328 /* Sources */,
 				7BAC01B52427C74900E25328 /* Frameworks */,
 				7BAC01B62427C74900E25328 /* Resources */,
@@ -140,6 +166,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		130E7E7258F1F9040D87CC53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyPaw_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7BAC01B42427C74900E25328 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		7BAC01CD2427C74B00E25328 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF8FD92B567B93454C037B77 /* Pods-MyPaw_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +353,7 @@
 		};
 		7BAC01CE2427C74B00E25328 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33E29483BF747DA976BFB343 /* Pods-MyPaw_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
