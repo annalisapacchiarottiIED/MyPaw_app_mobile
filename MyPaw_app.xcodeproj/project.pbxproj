@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B7A5715243D1DD9002CEDE6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7A5714243D1DD9002CEDE6 /* Product.swift */; };
+		7B7A573A243D2532002CEDE6 /* HomeMarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7A5739243D2532002CEDE6 /* HomeMarketView.swift */; };
 		7BAC01BC2427C74900E25328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC01BB2427C74900E25328 /* AppDelegate.swift */; };
 		7BAC01BE2427C74900E25328 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC01BD2427C74900E25328 /* SceneDelegate.swift */; };
 		7BAC01C02427C74900E25328 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC01BF2427C74900E25328 /* ContentView.swift */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		19B998328F485E0CAFE8B6F0 /* libPods-MyPaw_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyPaw_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E29483BF747DA976BFB343 /* Pods-MyPaw_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPaw_app.release.xcconfig"; path = "Target Support Files/Pods-MyPaw_app/Pods-MyPaw_app.release.xcconfig"; sourceTree = "<group>"; };
+		7B7A5714243D1DD9002CEDE6 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		7B7A5739243D2532002CEDE6 /* HomeMarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMarketView.swift; sourceTree = "<group>"; };
 		7BAC01B82427C74900E25328 /* MyPaw_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPaw_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BAC01BB2427C74900E25328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BAC01BD2427C74900E25328 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,8 +52,55 @@
 				EF8FD92B567B93454C037B77 /* Pods-MyPaw_app.debug.xcconfig */,
 				33E29483BF747DA976BFB343 /* Pods-MyPaw_app.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7B7A5710243D1C68002CEDE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B972726243F1F2600498D6E /* Services */,
+				7B7A5713243D1DB1002CEDE6 /* Market */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B7A5713243D1DB1002CEDE6 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				7B7A5714243D1DD9002CEDE6 /* Product.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		7B7A5736243D2372002CEDE6 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		7B7A5738243D2448002CEDE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B972727243F1F7300498D6E /* MarketView */,
+				7BAC01BF2427C74900E25328 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7B972726243F1F2600498D6E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7B972727243F1F7300498D6E /* MarketView */ = {
+			isa = PBXGroup;
+			children = (
+				7B7A5739243D2532002CEDE6 /* HomeMarketView.swift */,
+			);
+			path = MarketView;
 			sourceTree = "<group>";
 		};
 		7BAC01AF2427C74900E25328 = {
@@ -73,9 +124,11 @@
 		7BAC01BA2427C74900E25328 /* MyPaw_app */ = {
 			isa = PBXGroup;
 			children = (
+				7B7A5738243D2448002CEDE6 /* Views */,
+				7B7A5736243D2372002CEDE6 /* View Models */,
+				7B7A5710243D1C68002CEDE6 /* Models */,
 				7BAC01BB2427C74900E25328 /* AppDelegate.swift */,
 				7BAC01BD2427C74900E25328 /* SceneDelegate.swift */,
-				7BAC01BF2427C74900E25328 /* ContentView.swift */,
 				7BAC01C12427C74B00E25328 /* Assets.xcassets */,
 				7BAC01C62427C74B00E25328 /* LaunchScreen.storyboard */,
 				7BAC01C92427C74B00E25328 /* Info.plist */,
@@ -198,6 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BAC01BC2427C74900E25328 /* AppDelegate.swift in Sources */,
+				7B7A5715243D1DD9002CEDE6 /* Product.swift in Sources */,
+				7B7A573A243D2532002CEDE6 /* HomeMarketView.swift in Sources */,
 				7BAC01BE2427C74900E25328 /* SceneDelegate.swift in Sources */,
 				7BAC01C02427C74900E25328 /* ContentView.swift in Sources */,
 			);
