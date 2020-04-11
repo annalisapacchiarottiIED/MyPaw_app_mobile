@@ -18,7 +18,7 @@ struct ReservationView: View {
                 .edgesIgnoringSafeArea(.all)
             
             RoundedRectangle(cornerRadius: 15, style: .continuous)
-                .fill(Color("PrimaryYellow"))
+                .fill(Color("YellowPrimary"))
                 .frame(height: 200)
                 .edgesIgnoringSafeArea(.top)
             
@@ -48,7 +48,7 @@ struct ReservationView: View {
                 
                 Spacer()
                 
-                ConfirmButton(text: "Conferma", colorBG: "PrimaryYellow", colorShadow: "YellowShadow")
+                ConfirmButton(text: "Conferma", colorBG: "YellowPrimary", colorShadow: "YellowShadow")
                 
             }.padding(.horizontal, 25)
         }

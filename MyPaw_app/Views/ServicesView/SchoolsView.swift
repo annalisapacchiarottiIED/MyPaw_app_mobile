@@ -16,7 +16,7 @@ struct SchoolsView: View {
                 .edgesIgnoringSafeArea(.all)
             
             RoundedRectangle(cornerRadius: 15, style: .continuous)
-                .fill(Color("PrimaryYellow"))
+                .fill(Color("YellowPrimary"))
                 .frame(height: 200)
                 .edgesIgnoringSafeArea(.top)
             
@@ -38,7 +38,7 @@ struct SchoolsView: View {
                 
                 Spacer()
                 
-                ConfirmButton(text: "Prenota", colorBG: "PrimaryYellow", colorShadow: "YellowShadow")
+                ConfirmButton(text: "Prenota", colorBG: "YellowPrimary", colorShadow: "YellowShadow")
                 
             }.padding(.horizontal, 25)
         }

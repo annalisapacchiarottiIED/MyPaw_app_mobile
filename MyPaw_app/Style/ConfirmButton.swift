@@ -35,6 +35,6 @@ struct ConfirmButton: View {
 
 struct ConfirmButton_Previews: PreviewProvider {
     static var previews: some View {
-        ConfirmButton(text: "Conferma", colorBG: "PrimaryYellow", colorShadow: "YellowShadow")
+        ConfirmButton(text: "Conferma", colorBG: "YellowPrimary", colorShadow: "YellowShadow")
     }
 }

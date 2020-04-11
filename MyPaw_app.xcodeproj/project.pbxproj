@@ -136,10 +136,9 @@
 		7BAC01BA2427C74900E25328 /* MyPaw_app */ = {
 			isa = PBXGroup;
 			children = (
+				BE7932C8244216C3000C6852 /* Tabbar */,
 				BE7932AC2440F36C000C6852 /* Style */,
 				7B7A5738243D2448002CEDE6 /* Views */,
-				BE7932C524420D67000C6852 /* CustomTabBar.swift */,
-				BE7932C424420D67000C6852 /* MainView.swift */,
 				7B7A5710243D1C68002CEDE6 /* Models */,
 				7BAC01BB2427C74900E25328 /* AppDelegate.swift */,
 				7BAC01BD2427C74900E25328 /* SceneDelegate.swift */,
@@ -186,6 +185,15 @@
 				BE7932C02442008A000C6852 /* TabbarView.swift */,
 			);
 			path = Style;
+			sourceTree = "<group>";
+		};
+		BE7932C8244216C3000C6852 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				BE7932C524420D67000C6852 /* CustomTabBar.swift */,
+				BE7932C424420D67000C6852 /* MainView.swift */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -1,9 +1,9 @@
 //
 //  CustomTabBar.swift
-//  gHost(official)
+//  MyPaw_app
 //
-//  Created by Simone on 08/04/2020.
-//  Copyright © 2020 Simone. All rights reserved.
+//  Created by Beatrice Buran on 10/04/2020.
+//  Copyright © 2020 Annalisa Pacchiarotti. All rights reserved.
 //
 
 import SwiftUI
@@ -21,7 +21,7 @@ struct CustomTabBar: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 20)
-                .foregroundColor(Color("PrimaryYellow"))
+                .foregroundColor(Color("YellowPrimary"))
                 .padding(.horizontal, 30)
                 .onTapGesture {
                     self.index = 0
@@ -31,7 +31,7 @@ struct CustomTabBar: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 20)
-                .foregroundColor(Color("PrimaryYellow"))
+                .foregroundColor(Color("YellowPrimary"))
                 .padding(.horizontal, 30)
                 .onTapGesture {
                     self.index = 1
@@ -41,7 +41,7 @@ struct CustomTabBar: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 20)
-                .foregroundColor(Color("PrimaryYellow"))
+                .foregroundColor(Color("YellowPrimary"))
                 .padding(.horizontal, 30)
                 .onTapGesture {
                     self.index = 2
@@ -51,7 +51,7 @@ struct CustomTabBar: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 20)
-                .foregroundColor(Color("PrimaryYellow"))
+                .foregroundColor(Color("YellowPrimary"))
                 .padding(.horizontal, 30)
                 .onTapGesture {
                     self.index = 3
