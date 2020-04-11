@@ -15,6 +15,12 @@
 		7BAC01C22427C74B00E25328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC01C12427C74B00E25328 /* Assets.xcassets */; };
 		7BAC01C52427C74B00E25328 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC01C42427C74B00E25328 /* Preview Assets.xcassets */; };
 		7BAC01C82427C74B00E25328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC01C62427C74B00E25328 /* LaunchScreen.storyboard */; };
+		BE7932AA2440EE73000C6852 /* SchoolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932A92440EE73000C6852 /* SchoolsView.swift */; };
+		BE7932AE2440F383000C6852 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932AD2440F383000C6852 /* Title.swift */; };
+		BE7932B02440F51F000C6852 /* Subtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932AF2440F51F000C6852 /* Subtitle.swift */; };
+		BE7932B22440FCCB000C6852 /* ConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932B12440FCCB000C6852 /* ConfirmButton.swift */; };
+		BE7932B42441C708000C6852 /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932B32441C708000C6852 /* ReservationView.swift */; };
+		BE7932B62441C880000C6852 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932B52441C880000C6852 /* MapView.swift */; };
 		FFAC9BE11E50C8F11CD4113D /* libPods-MyPaw_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B998328F485E0CAFE8B6F0 /* libPods-MyPaw_app.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +37,12 @@
 		7BAC01C42427C74B00E25328 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7BAC01C72427C74B00E25328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BAC01C92427C74B00E25328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE7932A92440EE73000C6852 /* SchoolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsView.swift; sourceTree = "<group>"; };
+		BE7932AD2440F383000C6852 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		BE7932AF2440F51F000C6852 /* Subtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtitle.swift; sourceTree = "<group>"; };
+		BE7932B12440FCCB000C6852 /* ConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButton.swift; sourceTree = "<group>"; };
+		BE7932B32441C708000C6852 /* ReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
+		BE7932B52441C880000C6852 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		EF8FD92B567B93454C037B77 /* Pods-MyPaw_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPaw_app.debug.xcconfig"; path = "Target Support Files/Pods-MyPaw_app/Pods-MyPaw_app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +94,7 @@
 		7B7A5738243D2448002CEDE6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BE7932A82440EDEC000C6852 /* ServicesView */,
 				7B972727243F1F7300498D6E /* MarketView */,
 				7BAC01BF2427C74900E25328 /* ContentView.swift */,
 			);
@@ -124,6 +137,7 @@
 		7BAC01BA2427C74900E25328 /* MyPaw_app */ = {
 			isa = PBXGroup;
 			children = (
+				BE7932AC2440F36C000C6852 /* Style */,
 				7B7A5738243D2448002CEDE6 /* Views */,
 				7B7A5736243D2372002CEDE6 /* View Models */,
 				7B7A5710243D1C68002CEDE6 /* Models */,
@@ -151,6 +165,26 @@
 				19B998328F485E0CAFE8B6F0 /* libPods-MyPaw_app.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE7932A82440EDEC000C6852 /* ServicesView */ = {
+			isa = PBXGroup;
+			children = (
+				BE7932A92440EE73000C6852 /* SchoolsView.swift */,
+				BE7932B32441C708000C6852 /* ReservationView.swift */,
+				BE7932B52441C880000C6852 /* MapView.swift */,
+			);
+			path = ServicesView;
+			sourceTree = "<group>";
+		};
+		BE7932AC2440F36C000C6852 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				BE7932AD2440F383000C6852 /* Title.swift */,
+				BE7932AF2440F51F000C6852 /* Subtitle.swift */,
+				BE7932B12440FCCB000C6852 /* ConfirmButton.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +286,13 @@
 			files = (
 				7BAC01BC2427C74900E25328 /* AppDelegate.swift in Sources */,
 				7B7A5715243D1DD9002CEDE6 /* Product.swift in Sources */,
+				BE7932B22440FCCB000C6852 /* ConfirmButton.swift in Sources */,
+				BE7932B62441C880000C6852 /* MapView.swift in Sources */,
+				BE7932AE2440F383000C6852 /* Title.swift in Sources */,
+				BE7932AA2440EE73000C6852 /* SchoolsView.swift in Sources */,
 				7B7A573A243D2532002CEDE6 /* HomeMarketView.swift in Sources */,
+				BE7932B02440F51F000C6852 /* Subtitle.swift in Sources */,
+				BE7932B42441C708000C6852 /* ReservationView.swift in Sources */,
 				7BAC01BE2427C74900E25328 /* SceneDelegate.swift in Sources */,
 				7BAC01C02427C74900E25328 /* ContentView.swift in Sources */,
 			);
