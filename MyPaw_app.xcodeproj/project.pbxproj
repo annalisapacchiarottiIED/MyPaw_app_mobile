@@ -21,6 +21,9 @@
 		BE7932B22440FCCB000C6852 /* ConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932B12440FCCB000C6852 /* ConfirmButton.swift */; };
 		BE7932B42441C708000C6852 /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932B32441C708000C6852 /* ReservationView.swift */; };
 		BE7932B62441C880000C6852 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932B52441C880000C6852 /* MapView.swift */; };
+		BE7932C12442008A000C6852 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932C02442008A000C6852 /* TabbarView.swift */; };
+		BE7932C624420D67000C6852 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932C424420D67000C6852 /* MainView.swift */; };
+		BE7932C724420D67000C6852 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932C524420D67000C6852 /* CustomTabBar.swift */; };
 		FFAC9BE11E50C8F11CD4113D /* libPods-MyPaw_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B998328F485E0CAFE8B6F0 /* libPods-MyPaw_app.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,9 @@
 		BE7932B12440FCCB000C6852 /* ConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButton.swift; sourceTree = "<group>"; };
 		BE7932B32441C708000C6852 /* ReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
 		BE7932B52441C880000C6852 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		BE7932C02442008A000C6852 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		BE7932C424420D67000C6852 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BE7932C524420D67000C6852 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		EF8FD92B567B93454C037B77 /* Pods-MyPaw_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPaw_app.debug.xcconfig"; path = "Target Support Files/Pods-MyPaw_app/Pods-MyPaw_app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,13 +88,6 @@
 				7B7A5714243D1DD9002CEDE6 /* Product.swift */,
 			);
 			path = Market;
-			sourceTree = "<group>";
-		};
-		7B7A5736243D2372002CEDE6 /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Models";
 			sourceTree = "<group>";
 		};
 		7B7A5738243D2448002CEDE6 /* Views */ = {
@@ -139,7 +138,8 @@
 			children = (
 				BE7932AC2440F36C000C6852 /* Style */,
 				7B7A5738243D2448002CEDE6 /* Views */,
-				7B7A5736243D2372002CEDE6 /* View Models */,
+				BE7932C524420D67000C6852 /* CustomTabBar.swift */,
+				BE7932C424420D67000C6852 /* MainView.swift */,
 				7B7A5710243D1C68002CEDE6 /* Models */,
 				7BAC01BB2427C74900E25328 /* AppDelegate.swift */,
 				7BAC01BD2427C74900E25328 /* SceneDelegate.swift */,
@@ -183,6 +183,7 @@
 				BE7932AD2440F383000C6852 /* Title.swift */,
 				BE7932AF2440F51F000C6852 /* Subtitle.swift */,
 				BE7932B12440FCCB000C6852 /* ConfirmButton.swift */,
+				BE7932C02442008A000C6852 /* TabbarView.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -285,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BAC01BC2427C74900E25328 /* AppDelegate.swift in Sources */,
+				BE7932C624420D67000C6852 /* MainView.swift in Sources */,
+				BE7932C724420D67000C6852 /* CustomTabBar.swift in Sources */,
 				7B7A5715243D1DD9002CEDE6 /* Product.swift in Sources */,
 				BE7932B22440FCCB000C6852 /* ConfirmButton.swift in Sources */,
 				BE7932B62441C880000C6852 /* MapView.swift in Sources */,
@@ -294,6 +297,7 @@
 				BE7932B02440F51F000C6852 /* Subtitle.swift in Sources */,
 				BE7932B42441C708000C6852 /* ReservationView.swift in Sources */,
 				7BAC01BE2427C74900E25328 /* SceneDelegate.swift in Sources */,
+				BE7932C12442008A000C6852 /* TabbarView.swift in Sources */,
 				7BAC01C02427C74900E25328 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
