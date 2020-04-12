@@ -25,7 +25,7 @@ struct ConfirmButton: View {
                     .font(.system(size: 18))
                     .frame(minWidth: 0, maxWidth: .infinity)
                     //                        .padding(.horizontal, 50)
-                    .frame(height: 40)
+                    .frame(height: 50)
             }.background(Color(colorBG))
                 .cornerRadius(25)
                 .shadow(color: Color(colorShadow), radius: 6, x: 0, y: 5)

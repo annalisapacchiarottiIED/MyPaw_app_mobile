@@ -95,20 +95,6 @@ struct ViewManager: View {
     }
 }
 
-//struct MainView: View {
-//    
-//    @State var index = 0
-//
-//    var body: some View {
-//        
-//        VStack(spacing: 0) {
-//            ViewManager(index: self.$index)
-//            Spacer()
-//            CustomTabBar(index: self.$index)
-//        }.edgesIgnoringSafeArea(.bottom)
-//    }
-//}
-//
 struct CustomTabBar_Previews: PreviewProvider {
     static var previews: some View {
         CustomTabBar(index: .constant(0))
