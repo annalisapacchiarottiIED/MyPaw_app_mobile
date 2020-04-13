@@ -61,7 +61,9 @@ struct CustomTabBar: View {
             //            Spacer()
         }.frame(minWidth: 0, maxWidth: .infinity).padding(.top).padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.top)
             .background(
-                Rectangle().foregroundColor(self.index == 3 ? Color("Background") : Color("Background"))
+                Rectangle().foregroundColor(self.index == 3 ? Color("UpBackground") : Color("UpBackground"))
+                .cornerRadius(17)
+                .shadow(color: Color.gray.opacity(0.1), radius: 6, x: 0, y: -5)
         )
         
     }
@@ -95,20 +97,6 @@ struct ViewManager: View {
     }
 }
 
-//struct MainView: View {
-//    
-//    @State var index = 0
-//
-//    var body: some View {
-//        
-//        VStack(spacing: 0) {
-//            ViewManager(index: self.$index)
-//            Spacer()
-//            CustomTabBar(index: self.$index)
-//        }.edgesIgnoringSafeArea(.bottom)
-//    }
-//}
-//
 struct CustomTabBar_Previews: PreviewProvider {
     static var previews: some View {
         CustomTabBar(index: .constant(0))

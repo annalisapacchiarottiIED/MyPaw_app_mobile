@@ -11,13 +11,6 @@ import SwiftUI
 struct MainView: View {
     @State var index = 0
     
-    @State private var viewState = CGSize.zero
-    
-    @State private var firstAccess = false
-    @State private var addWidget : Bool = false
-    @State private var addHosting : Bool = false
-    @State private var chooseHost : Bool = false
-    
     var body: some View {
         ZStack {
             Color.init("Background")
@@ -25,6 +18,7 @@ struct MainView: View {
             VStack(spacing: 0) {
                 
                 ViewManager(index: self.$index)
+                    .padding(.bottom, -6)
                 Spacer()
                 CustomTabBar(index: self.$index)
                 

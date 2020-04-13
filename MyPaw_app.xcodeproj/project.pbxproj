@@ -15,15 +15,17 @@
 		7BAC01C22427C74B00E25328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC01C12427C74B00E25328 /* Assets.xcassets */; };
 		7BAC01C52427C74B00E25328 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC01C42427C74B00E25328 /* Preview Assets.xcassets */; };
 		7BAC01C82427C74B00E25328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC01C62427C74B00E25328 /* LaunchScreen.storyboard */; };
+		BE47EE6624423F1D00311082 /* ListaProvaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47EE6524423F1D00311082 /* ListaProvaView.swift */; };
+		BE47EE6824434D0600311082 /* ServicesListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47EE6724434D0600311082 /* ServicesListItem.swift */; };
 		BE7932AA2440EE73000C6852 /* SchoolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932A92440EE73000C6852 /* SchoolsView.swift */; };
 		BE7932AE2440F383000C6852 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932AD2440F383000C6852 /* Title.swift */; };
 		BE7932B02440F51F000C6852 /* Subtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932AF2440F51F000C6852 /* Subtitle.swift */; };
 		BE7932B22440FCCB000C6852 /* ConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932B12440FCCB000C6852 /* ConfirmButton.swift */; };
 		BE7932B42441C708000C6852 /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932B32441C708000C6852 /* ReservationView.swift */; };
 		BE7932B62441C880000C6852 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932B52441C880000C6852 /* MapView.swift */; };
-		BE7932C12442008A000C6852 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932C02442008A000C6852 /* TabbarView.swift */; };
 		BE7932C624420D67000C6852 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932C424420D67000C6852 /* MainView.swift */; };
 		BE7932C724420D67000C6852 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932C524420D67000C6852 /* CustomTabBar.swift */; };
+		BE7932D124422E42000C6852 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932D024422E42000C6852 /* TestView.swift */; };
 		FFAC9BE11E50C8F11CD4113D /* libPods-MyPaw_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B998328F485E0CAFE8B6F0 /* libPods-MyPaw_app.a */; };
 /* End PBXBuildFile section */
 
@@ -40,15 +42,17 @@
 		7BAC01C42427C74B00E25328 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7BAC01C72427C74B00E25328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BAC01C92427C74B00E25328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE47EE6524423F1D00311082 /* ListaProvaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaProvaView.swift; sourceTree = "<group>"; };
+		BE47EE6724434D0600311082 /* ServicesListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesListItem.swift; sourceTree = "<group>"; };
 		BE7932A92440EE73000C6852 /* SchoolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsView.swift; sourceTree = "<group>"; };
 		BE7932AD2440F383000C6852 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		BE7932AF2440F51F000C6852 /* Subtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtitle.swift; sourceTree = "<group>"; };
 		BE7932B12440FCCB000C6852 /* ConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButton.swift; sourceTree = "<group>"; };
 		BE7932B32441C708000C6852 /* ReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
 		BE7932B52441C880000C6852 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		BE7932C02442008A000C6852 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		BE7932C424420D67000C6852 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BE7932C524420D67000C6852 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		BE7932D024422E42000C6852 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		EF8FD92B567B93454C037B77 /* Pods-MyPaw_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPaw_app.debug.xcconfig"; path = "Target Support Files/Pods-MyPaw_app/Pods-MyPaw_app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +80,6 @@
 		7B7A5710243D1C68002CEDE6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7B972726243F1F2600498D6E /* Services */,
 				7B7A5713243D1DB1002CEDE6 /* Market */,
 			);
 			path = Models;
@@ -98,13 +101,6 @@
 				7BAC01BF2427C74900E25328 /* ContentView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		7B972726243F1F2600498D6E /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		7B972727243F1F7300498D6E /* MarketView */ = {
@@ -136,12 +132,14 @@
 		7BAC01BA2427C74900E25328 /* MyPaw_app */ = {
 			isa = PBXGroup;
 			children = (
-				BE7932C8244216C3000C6852 /* Tabbar */,
-				BE7932AC2440F36C000C6852 /* Style */,
-				7B7A5738243D2448002CEDE6 /* Views */,
-				7B7A5710243D1C68002CEDE6 /* Models */,
 				7BAC01BB2427C74900E25328 /* AppDelegate.swift */,
 				7BAC01BD2427C74900E25328 /* SceneDelegate.swift */,
+				BE7932D024422E42000C6852 /* TestView.swift */,
+				BE47EE6524423F1D00311082 /* ListaProvaView.swift */,
+				7B7A5738243D2448002CEDE6 /* Views */,
+				7B7A5710243D1C68002CEDE6 /* Models */,
+				BE7932C8244216C3000C6852 /* Tabbar */,
+				BE7932AC2440F36C000C6852 /* Style */,
 				7BAC01C12427C74B00E25328 /* Assets.xcassets */,
 				7BAC01C62427C74B00E25328 /* LaunchScreen.storyboard */,
 				7BAC01C92427C74B00E25328 /* Info.plist */,
@@ -182,7 +180,7 @@
 				BE7932AD2440F383000C6852 /* Title.swift */,
 				BE7932AF2440F51F000C6852 /* Subtitle.swift */,
 				BE7932B12440FCCB000C6852 /* ConfirmButton.swift */,
-				BE7932C02442008A000C6852 /* TabbarView.swift */,
+				BE47EE6724434D0600311082 /* ServicesListItem.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -298,14 +296,16 @@
 				BE7932C724420D67000C6852 /* CustomTabBar.swift in Sources */,
 				7B7A5715243D1DD9002CEDE6 /* Product.swift in Sources */,
 				BE7932B22440FCCB000C6852 /* ConfirmButton.swift in Sources */,
+				BE7932D124422E42000C6852 /* TestView.swift in Sources */,
+				BE47EE6824434D0600311082 /* ServicesListItem.swift in Sources */,
 				BE7932B62441C880000C6852 /* MapView.swift in Sources */,
 				BE7932AE2440F383000C6852 /* Title.swift in Sources */,
 				BE7932AA2440EE73000C6852 /* SchoolsView.swift in Sources */,
+				BE47EE6624423F1D00311082 /* ListaProvaView.swift in Sources */,
 				7B7A573A243D2532002CEDE6 /* HomeMarketView.swift in Sources */,
 				BE7932B02440F51F000C6852 /* Subtitle.swift in Sources */,
 				BE7932B42441C708000C6852 /* ReservationView.swift in Sources */,
 				7BAC01BE2427C74900E25328 /* SceneDelegate.swift in Sources */,
-				BE7932C12442008A000C6852 /* TabbarView.swift in Sources */,
 				7BAC01C02427C74900E25328 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,13 +445,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MyPaw_app/Preview Content\"";
+				DEVELOPMENT_TEAM = J3NW9FNWGJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MyPaw_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "lisispacchia.MyPaw-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beatriceburan.myPaw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -465,13 +466,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MyPaw_app/Preview Content\"";
+				DEVELOPMENT_TEAM = J3NW9FNWGJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MyPaw_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "lisispacchia.MyPaw-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beatriceburan.myPaw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
