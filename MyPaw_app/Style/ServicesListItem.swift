@@ -20,6 +20,7 @@ struct ServicesListItem: View {
                 .clipShape(RoundedRectangle(cornerRadius: 8)).padding(.leading, -15)
             
             Text(name)
+                .font(.system(size: 16))
                 .fontWeight(.semibold)
                 .padding(.leading, 10)
             

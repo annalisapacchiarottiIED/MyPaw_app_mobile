@@ -18,6 +18,7 @@ struct MainView: View {
             VStack(spacing: 0) {
                 
                 ViewManager(index: self.$index)
+                    .padding(.bottom, -6)
                 Spacer()
                 CustomTabBar(index: self.$index)
                 

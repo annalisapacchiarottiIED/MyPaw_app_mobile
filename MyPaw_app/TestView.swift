@@ -57,14 +57,14 @@ struct TestView: View {
             }
             .padding()
         }
-        .partialSheet(presented: $modalPresented) {
-            VStack(alignment: .leading) {
-                Text("Titolo")
-                    .fontWeight(.semibold)
-                Text("indirizzo")
-                
-            }
-        }
+//        .partialSheet(presented: $modalPresented) {
+//            VStack(alignment: .leading) {
+//                Text("Titolo")
+//                    .fontWeight(.semibold)
+//                Text("indirizzo")
+//                
+//            }
+//        }
     }
 }
 

@@ -25,9 +25,6 @@
 		BE7932B62441C880000C6852 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932B52441C880000C6852 /* MapView.swift */; };
 		BE7932C624420D67000C6852 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932C424420D67000C6852 /* MainView.swift */; };
 		BE7932C724420D67000C6852 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932C524420D67000C6852 /* CustomTabBar.swift */; };
-		BE7932CD244229EE000C6852 /* PartialSheetViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932CA244229EE000C6852 /* PartialSheetViewModifier.swift */; };
-		BE7932CE244229EE000C6852 /* DragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932CB244229EE000C6852 /* DragState.swift */; };
-		BE7932CF244229EE000C6852 /* View+PartialSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932CC244229EE000C6852 /* View+PartialSheetModifier.swift */; };
 		BE7932D124422E42000C6852 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7932D024422E42000C6852 /* TestView.swift */; };
 		FFAC9BE11E50C8F11CD4113D /* libPods-MyPaw_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B998328F485E0CAFE8B6F0 /* libPods-MyPaw_app.a */; };
 /* End PBXBuildFile section */
@@ -55,9 +52,6 @@
 		BE7932B52441C880000C6852 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		BE7932C424420D67000C6852 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BE7932C524420D67000C6852 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
-		BE7932CA244229EE000C6852 /* PartialSheetViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartialSheetViewModifier.swift; sourceTree = "<group>"; };
-		BE7932CB244229EE000C6852 /* DragState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragState.swift; sourceTree = "<group>"; };
-		BE7932CC244229EE000C6852 /* View+PartialSheetModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+PartialSheetModifier.swift"; sourceTree = "<group>"; };
 		BE7932D024422E42000C6852 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		EF8FD92B567B93454C037B77 /* Pods-MyPaw_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPaw_app.debug.xcconfig"; path = "Target Support Files/Pods-MyPaw_app/Pods-MyPaw_app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,7 +140,6 @@
 				7B7A5710243D1C68002CEDE6 /* Models */,
 				BE7932C8244216C3000C6852 /* Tabbar */,
 				BE7932AC2440F36C000C6852 /* Style */,
-				BE7932C9244229EE000C6852 /* PartialSheet */,
 				7BAC01C12427C74B00E25328 /* Assets.xcassets */,
 				7BAC01C62427C74B00E25328 /* LaunchScreen.storyboard */,
 				7BAC01C92427C74B00E25328 /* Info.plist */,
@@ -199,16 +192,6 @@
 				BE7932C424420D67000C6852 /* MainView.swift */,
 			);
 			path = Tabbar;
-			sourceTree = "<group>";
-		};
-		BE7932C9244229EE000C6852 /* PartialSheet */ = {
-			isa = PBXGroup;
-			children = (
-				BE7932CA244229EE000C6852 /* PartialSheetViewModifier.swift */,
-				BE7932CB244229EE000C6852 /* DragState.swift */,
-				BE7932CC244229EE000C6852 /* View+PartialSheetModifier.swift */,
-			);
-			path = PartialSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,19 +292,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BAC01BC2427C74900E25328 /* AppDelegate.swift in Sources */,
-				BE7932CD244229EE000C6852 /* PartialSheetViewModifier.swift in Sources */,
 				BE7932C624420D67000C6852 /* MainView.swift in Sources */,
 				BE7932C724420D67000C6852 /* CustomTabBar.swift in Sources */,
 				7B7A5715243D1DD9002CEDE6 /* Product.swift in Sources */,
 				BE7932B22440FCCB000C6852 /* ConfirmButton.swift in Sources */,
 				BE7932D124422E42000C6852 /* TestView.swift in Sources */,
-				BE7932CF244229EE000C6852 /* View+PartialSheetModifier.swift in Sources */,
 				BE47EE6824434D0600311082 /* ServicesListItem.swift in Sources */,
 				BE7932B62441C880000C6852 /* MapView.swift in Sources */,
 				BE7932AE2440F383000C6852 /* Title.swift in Sources */,
 				BE7932AA2440EE73000C6852 /* SchoolsView.swift in Sources */,
 				BE47EE6624423F1D00311082 /* ListaProvaView.swift in Sources */,
-				BE7932CE244229EE000C6852 /* DragState.swift in Sources */,
 				7B7A573A243D2532002CEDE6 /* HomeMarketView.swift in Sources */,
 				BE7932B02440F51F000C6852 /* Subtitle.swift in Sources */,
 				BE7932B42441C708000C6852 /* ReservationView.swift in Sources */,
@@ -465,13 +445,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MyPaw_app/Preview Content\"";
+				DEVELOPMENT_TEAM = J3NW9FNWGJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MyPaw_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "lisispacchia.MyPaw-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beatriceburan.myPaw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,13 +466,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MyPaw_app/Preview Content\"";
+				DEVELOPMENT_TEAM = J3NW9FNWGJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MyPaw_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "lisispacchia.MyPaw-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beatriceburan.myPaw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
