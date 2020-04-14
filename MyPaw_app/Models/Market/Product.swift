@@ -7,21 +7,34 @@
 //
 
 import Foundation
+import Alamofire
 
-struct Product {
-    
+
+
+struct Product: Identifiable {
+
+    let id: Int
     let name: String
     let description: String
     let price: Double
-    let product_img: String
+    let img: String
+    
 }
 
-extension Product {
-    static func all() -> [Product] {
-        return  [
-            Product(name:"prodotto 1", description:"questa è la descrizione di questo prodotto bellissimo", price: 200, product_img: "default_img"),
-            Product(name:"prodotto 2", description:"questa è la descrizione di questo prodotto bellissimo", price: 200, product_img: "default_img"),
-            Product(name:"prodotto 3", description:"questa è la descrizione di questo prodotto bellissimo", price: 200, product_img: "default_img")
-                ]
+
+
+
+var productsList = [
+    Product(id: 1, name:"prodotto 1", description:"questa è la descrizione di questo prodotto bellissimo", price: 200, img: "default_img"),
+    Product(id: 2, name:"prodotto 1", description:"questa è la descrizione di questo prodotto bellissimo", price: 200, img: "default_img"),
+    Product(id: 3, name:"prodotto 1", description:"questa è la descrizione di questo prodotto bellissimo", price: 200, img: "default_img"),
+]
+
+extension Array {
+    func chunked(into size: Int) -> [[Element]] {
+        return stride(from: 0, to: count, by: size).map {
+            Array(self[$0 ..< Swift.min($0 + size, count)])
+        }
     }
 }
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B17A7332445BB690093EA90 /* ProductListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17A7322445BB690093EA90 /* ProductListItem.swift */; };
 		7B7A5715243D1DD9002CEDE6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7A5714243D1DD9002CEDE6 /* Product.swift */; };
 		7B7A573A243D2532002CEDE6 /* HomeMarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7A5739243D2532002CEDE6 /* HomeMarketView.swift */; };
 		7BAC01BC2427C74900E25328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC01BB2427C74900E25328 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		19B998328F485E0CAFE8B6F0 /* libPods-MyPaw_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyPaw_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E29483BF747DA976BFB343 /* Pods-MyPaw_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPaw_app.release.xcconfig"; path = "Target Support Files/Pods-MyPaw_app/Pods-MyPaw_app.release.xcconfig"; sourceTree = "<group>"; };
+		7B17A7322445BB690093EA90 /* ProductListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListItem.swift; sourceTree = "<group>"; };
 		7B7A5714243D1DD9002CEDE6 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		7B7A5739243D2532002CEDE6 /* HomeMarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMarketView.swift; sourceTree = "<group>"; };
 		7BAC01B82427C74900E25328 /* MyPaw_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPaw_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,7 @@
 				BE7932AF2440F51F000C6852 /* Subtitle.swift */,
 				BE7932B12440FCCB000C6852 /* ConfirmButton.swift */,
 				BE7932C02442008A000C6852 /* TabbarView.swift */,
+				7B17A7322445BB690093EA90 /* ProductListItem.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				BE7932C724420D67000C6852 /* CustomTabBar.swift in Sources */,
 				7B7A5715243D1DD9002CEDE6 /* Product.swift in Sources */,
 				BE7932B22440FCCB000C6852 /* ConfirmButton.swift in Sources */,
+				7B17A7332445BB690093EA90 /* ProductListItem.swift in Sources */,
 				BE7932B62441C880000C6852 /* MapView.swift in Sources */,
 				BE7932AE2440F383000C6852 /* Title.swift in Sources */,
 				BE7932AA2440EE73000C6852 /* SchoolsView.swift in Sources */,

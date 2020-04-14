@@ -7,19 +7,32 @@
 //
 
 import SwiftUI
+import Alamofire
 
+struct Login: Encodable {
+    let email: String
+    let password: String
+}
+struct Prod: Encodable {
+    let id: String
+}
 
 struct HomeMarketView: View {
+    
     @State public var search: String = ""
+    let chunkedProductsList = productsList.chunked(into: 2)
+    let login = Login(email: "lkeebler@example.com", password: "password")
+    let prod = Prod(id: "1")
+    
     
     var body: some View {
         ZStack(alignment: .top){
             Color.init("Background")
                 .edgesIgnoringSafeArea(.all)
             VStack(){
-                RoundedRectangle(cornerRadius: 35, style: .continuous)
+                RoundedRectangle(cornerRadius: 55, style: .continuous)
                     .fill(Color("RedMarket"))
-                    .frame(height: 600)
+                    .frame(height: 520)
                     .edgesIgnoringSafeArea(.top)
                     .shadow(color: Color.black.opacity(0.16), radius: 6, x: 0, y: 3)
                    
@@ -27,6 +40,18 @@ struct HomeMarketView: View {
             }
             VStack(){
                 VStack(){
+                    Button(action: {
+                        AF.request("http://127.0.0.1:8000/api/products/show",
+                               method: .post,
+                               parameters: self.prod,
+                               encoder: JSONParameterEncoder.default).response { response in
+                        debugPrint(response)
+                        }
+
+                    }) {
+                        Text("Prodotto")
+
+                    }
                     HStack(){
                     Title(title: "Market")
                     Spacer()
@@ -37,7 +62,7 @@ struct HomeMarketView: View {
                         .background(RoundedRectangle(cornerRadius: 25)
                         .foregroundColor(Color("BrightRedMarket"))
                         .cornerRadius(25))
-                        .shadow(color: Color.black.opacity(0.16), radius: 6, x: 0, y: 3)
+                        .shadow(color: Color.black.opacity(0.25), radius: 6, x: 0, y: 3)
                             
 
                     Text("Per chi stai cercando un prodotto?")
@@ -88,52 +113,22 @@ struct HomeMarketView: View {
                     Text("Novità")
                     .foregroundColor(Color("RedMarket"))
                     .bold()
-                    VStack(){
-                        HStack(){
-                            ZStack(){
-                                Image("default_img")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 170.0, height: 190.0, alignment: .center)
-                                .padding(.horizontal, 5)
-                                .shadow(color: Color.black.opacity(0.16), radius: 6, x: 0, y: 3)
-                                
-                                VStack(){
-                                    
-                                    Text("ProductName")
-                                    Text("Productdescription")
-                                }
-                                .frame(width: 170.0, height: 60)
-                                .background(Color("Background"))
-                                
-                            }
-                        ZStack(){
-                            Image("default_img")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 170.0, height: 190.0, alignment: .center)
-                            .padding(.horizontal, 5)
-                            .shadow(color: Color.black.opacity(0.16), radius: 6, x: 0, y: 3)
+                }
+                
+                ScrollView(showsIndicators: false) {
+                    ForEach(0..<chunkedProductsList.count) { index in
+                        
+                        HStack {
                             
-                            VStack(){
+                            ForEach(self.chunkedProductsList[index]) { product in
                                 
-                                Text("ProductName")
-                                Text("Productdescription")
+                                ProductListItem(name: product.name, description: product.description, price: product.price, img: product.img)
                             }
-                            .frame(width: 170.0, height: 60)
-                            .background(Color("Background"))
-                            
-                        }
-
                         }
                     }
-
-                    
                 }
-      
             }.padding(.horizontal, 25)
-            
-        }        
+        }
     }
 }
 
@@ -142,4 +137,5 @@ struct HomeMarketView_Previews: PreviewProvider {
         HomeMarketView()
     }
 }
+
 
