@@ -13,6 +13,12 @@ struct Title: View {
     
     var body: some View {
        HStack {
+            Image(systemName: "chevron.left")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(height: 20)
+                .foregroundColor(Color.white)
+                .padding(.horizontal, 15)
             Text(title)
                 .foregroundColor(.white)
                 .fontWeight(.bold)
